@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>NEW ARRIVALS</title>
+	<link rel="stylesheet" type="text/css" href="coming.css">
+</head>
+<body>
+  
+	<header>
+		<div class="hero">
+		<h1>Online Library<br><div class="titulli"><a href="about.html">BookBub</a></div></br>
+    
+   <br>NEW ARRIVALS IN</br>
+    </h1>
+	<hr>
+  	<p id="launch"></p>
+	</div>
+	</header>
+
+</body>
+<script type="text/javascript">
+	var countDownDate = new Date("March 5, 2021 15:37:25").getTime();
+
+var x = setInterval(function() {
+
+
+  var now = new Date().getTime();
+
+  
+  var distance = countDownDate - now;
+
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  document.getElementById("launch").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+ 
+  if (distance < 0) {
+    clearInterval(countDownfunction);
+    document.getElementById("launch").innerHTML = "EXPIRED";
+  }
+}, 1000);
+
+</script>
+</html>

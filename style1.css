@@ -1,0 +1,261 @@
+*{
+	margin:0;
+	padding: 0;
+}
+html,body{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100vh;
+	background:#eae6e0;
+	background-color: black no-repeat 50% 50%;
+	background-size: cover;
+}
+
+.container {
+	width: 90%;
+	margin: 0 auto;
+}
+.navbar{
+	margin-top: 30px;
+	width: 100%;
+	overflow: hidden;
+	height: 90px;
+	line-height: 70px;
+
+
+
+}
+.b{
+	display: inline-block;
+}
+.menu{
+	float: right;
+
+}
+.menu li{
+	border:2px solid #d8cfc1;
+	border-radius: 30%;
+	box-shadow: 2px 5px #dfd7ca;
+	float: left;
+	width: 120px;
+	height: 70px;
+	line-height: 70px;
+	text-align: center;
+	list-style: none;
+	margin: 25px;
+	margin-top: 5px;
+}
+.menu li a{
+	color: #000;
+	text-decoration: none;
+	text-transform: uppercase;
+	display: block;
+}
+.menu li:hover{
+	background:#d8cfc1;
+}
+.menu li a:hover{
+	color:black;
+	font-weight: 8%;
+	transform: scale(1.2);
+}
+
+
+.ngjyra {
+	animation: ngjyrabook 1s infinite;
+}
+@keyframes ngjyrabook{
+	/*0%{color:gray;}
+	25%{color: black;}
+	50%{color:gray;}
+	100%{color: black;}*/
+	50%{color: #D3D3D3;}
+	50%{color: #CC0000;}
+}
+
+
+ .welcome{
+ 	margin-top: 70px;
+ 	text-align: left;
+ 	margin-left: 30px;
+
+ }
+ 
+
+ h3{
+ 	
+ 	font-family:sans-serif;
+ 	font-size: 64px;
+ 	text-decoration: blink;
+ 	text-shadow: 0px 0px 15px #E5E8E8;
+ 	    color: #323030;
+ 	    margin-left: 35px;
+ }
+.welcome p{
+	
+ 	margin-top:90px;
+ 	text-transform: uppercase;
+ 	font-family: sans-serif;
+ 	color:grey;
+ 	font-weight:500;
+ 	line-height: 1.1em;
+ 	letter-spacing: normal;
+ 	margin-left: 35px;
+ }
+.quote{
+	
+ margin-top: 60px;
+ 	text-align: left;
+ 	font-size: 25px;
+ 	font-family:sans-serif;
+ 	    color: grey;
+ 	    font-weight: 500;
+ 	    line-height: 10px;
+ 	    letter-spacing: normal;
+ 	    text-rendering: geometricPrecision;
+    text-transform: none;
+    display: block;
+        margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    margin-left: 22px;
+    
+
+ }
+ .quote p{
+ 	
+ 	margin-top: 65px;
+ 	text-align: left;
+ 	font-size: 25px;
+ 	font-family:sans-serif;
+ 	    color: grey;
+ 	    font-weight: 500;
+ 	    line-height: 10px;
+ 	    letter-spacing: normal;
+ 	    text-rendering: geometricPrecision;
+    text-transform: none;
+    display: block;
+        margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    margin-left: 25px;
+ }
+
+
+
+ .slideshow{
+ 	position: absolute;
+	height: 500px;
+	box-sizing: border-box;
+margin-top: 30px;	
+	margin-left: 40px;
+
+
+}
+
+.content{
+	margin-left:750px;
+	width: 180px;
+	perspective: 1000px;
+	position: relative;
+	padding: 10px;
+	padding-top:-50px;
+	margin-bottom:50px;
+	
+   
+
+
+}
+.content-carrousel{
+	width: 100%;
+	position: absolute;
+	float: right;
+	animation: rotar 20s infinite linear;
+	transform-style: preserve-3d;
+
+	
+}
+
+.content-carrousel:hover{
+	animation-play-state: paused;
+	cursor: pointer;
+}
+
+.content-carrousel figure{
+	width: 100%;
+	height: 120px;
+	border:1px solid #4d444d;
+	position: absolute;
+	overflow: hidden;
+
+}
+
+.content-carrousel figure:nth-child(1){
+	transform:rotateY(0deg) translateZ(300px);
+}
+
+.content-carrousel figure:nth-child(2){
+	transform:rotateY(40deg) translateZ(300px);
+}
+
+.content-carrousel figure:nth-child(3){
+	transform:rotateY(80deg) translateZ(300px);
+}
+
+.content-carrousel figure:nth-child(4){
+	transform:rotateY(120deg) translateZ(300px);
+}
+
+.content-carrousel figure:nth-child(5){
+	transform:rotateY(160deg) translateZ(300px);
+}
+
+.content-carrousel figure:nth-child(6){
+	transform:rotateY(200deg) translateZ(300px);
+}
+
+.content-carrousel figure:nth-child(7){
+	transform:rotateY(240deg) translateZ(300px);
+	
+}
+
+
+
+.content-carrousel figure:nth-child(8){
+	transform:rotateY(280deg) translateZ(300px);
+}
+
+.content-carrousel figure:nth-child(9){
+	transform:rotateY(320deg) translateZ(300px);
+}
+
+
+.shadow{
+	position: absolute;
+	box-shadow: 0px 0px 20px 0px #000;
+	border-radius: 2px;
+
+}
+.content-carrousel img{
+	image-rendering: auto;
+	transition: all 300ms;
+	width: 100%;
+	height: 100%;
+}
+
+.content-carrousel img:hover{
+	transform: scale(1.2);
+	transition: all 350ms;
+}
+
+@keyframes rotar{
+	from{
+		transform: rotateY(0deg);
+}to{
+	transform: rotateY(360deg);
+}
+
+

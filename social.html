@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact us</title>
+	<link rel="stylesheet" type="text/css" href="social.css">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+	<div id="mysidenav" class="mynav">
+		<a href="gif.html" id="goback">Go Back</a></a>
+	</div>
+	<h1>Contact Us
+		<br> <br>
+		We'd <span class="love">love</span> to hear from you!</h1>
+<div class="share">
+	<div class="toggle"></div>
+
+	<ul>
+		<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i>
+        </a></li>
+        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i>
+        </a></li>
+        <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i>
+        </a></li>
+        <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i>
+        </a></li>
+        <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i>
+        </a></li>
+        <li><a href="#"><i class="fa fa-skype" aria-hidden="true"></i>
+        </a></li>
+        <li><a href="#"><i class="fa fa-tumblr" aria-hidden="true"></i>
+        </a></li>
+        <li><a href="#"><i class="fa fa-whatsapp" aria-hidden="true"></i>
+        </a></li>
+		
+	</ul>
+	</div>
+    
+    <footer>
+	&copy; BookBub 2019. All Rights Reserved.
+    </footer>
+
+
+	 <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+	 <script type="text/javascript">
+	 	$(document).ready(function(){ 
+	 		$('.toggle').click(function(){
+	 		$('.toggle').toggleClass('active')
+	 		$('ul').toggleClass('active') 
+ 
+
+            })
+	 	})
+
+        var year = new Date().getFullYear();
+	    var date = '&copy; BookBub 2019. All Rights Reserved.';
+	    document.getElementByTagName('footer')[0].innerHTML = date;
+
+
+
+
+
+	 </script>
+</body>
+</html>
